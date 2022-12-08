@@ -1,5 +1,5 @@
 body,html {
-    background: linear-gradient(rgba(95, 114, 189, 0.8), rgba(155, 35, 234, 0.7)), url("img/bicicleta.jpg");
+    background: linear-gradient(rgba(95, 114, 189, 0.8), rgba(230, 225, 189, 0.7)), url("../img/portada.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
