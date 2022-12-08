@@ -36,102 +36,118 @@
     </div>
     <div class="main">
 
-      <center><h1>HTML DOM</h1></center>
+      <center>
+        <h1>HTML DOM</h1>
+      </center>
 
 
       <center>
         <div class="col-md-6 col-sm-6">
 
           <p class="mt-5">
-            Cuando se carga una página web, el navegador crea un modelo de objeto de documento de la página. <br>
+            Por lo tanto para cambiar el contenido de un elemento HTML, utilice la siguiente sintaxis: <br><br>
 
-            El modelo HTML DOM se construye como un árbol de objetos :
+            <b>document.getElementById(id).innerHTML = new HTML</b>
+
+            Este ejemplo cambia el contenido de un parrafo (p) elemento:
           </p>
 
-          <img src="../img/arbolObjetos.png" alt="">
+          <img src="../img/ejemplo01HTML.png" class="img-fluid" alt="">
 
-          <p class="mt-5">
-            <b> El estándar W3C DOM se divide en 3 partes diferentes: </b> <br><br>
-          <ul>
+          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
 
-            <li>
-              <b> Core DOM:</b> modelo estándar para todos los tipos de documentos
-            </li>
-            <li>
-              <b> XML DOM: </b>modelo estándar para documentos XML
-            </li>
-            <li>
-              <b> HTML DOM: </b>modelo estándar para documentos HTML
-            </li>
-          </ul>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml" target="_blank"
+            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
 
+          <p>
+            <b> Ejemplo explicado: </b> <br><br>
 
+            - El documento HTML anterior contiene un elemento con id="p1" <br>
+            - Usamos el HTML DOM para obtener el elemento conid="p1" <br>
+            - Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "¡Nuevo Párrafo!"
           </p>
 
-          <p class="mt-5"><b> ¿Como podemos modificarlo? </b> <br><br>
+          <hr>
 
-            Tenemos distintos elementos, propiedades, métodos y eventos para ello. <br><br>
-
-            Una propiedad es un valor de un elemento HTML un que podemos obtener o settear, un método es una acción
-            que podemos realizar sobre esa propiedad y un evento es como reaccionamos ante una acción específica sobre
-            algún elemento de nuestra página. <br><br>
-
-            Por ejemplo en el siguiente código HTML:
+          <p>
+            Este ejemplo cambia el contenido de un título (h1) elemento:
           </p>
 
-          <img src="../img/ejemploIntr.png" alt="">
+          <img src="../img/ejemTitulo.png" class="img-fluid" alt="">
 
-          <p class="mt-5">
-            Nos vamos a enfocar en la linea 5 del código: <br><br>
+          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
 
-            El elemento document es uno de los objetos más importantes en el DOM, este representa nuestra página
-            renderizada. El objeto window es otro de los objetos más importantes, es el elemento raíz de nuestra página,
-            o bien el global object en Javascript y document es hijo del mismo. Si queremos acceder a cualquier elemento
-            HTML de nuestra página empezamos desde el objeto document. En nuestro ejemplo vemos el método
-            getElementById, el cual como el nombre menciona, obtiene el elemento HTML que contenga el id “demo” y sobre
-            la property innerHTML, la cual nos devuelve el contenido de dicho elemento, ya sea un valor determinado, en
-            este caso “Techie DOM”.
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml" target="_blank"
+            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
+
+          <p>
+            <b> Ejemplo explicado: </b> <br><br>
+
+            - El documento HTML anterior contiene un h1 elemento conid="id01" <br>
+            - Usamos el HTML DOM para obtener el elemento conid="id01". <br>
+            - Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "Nuevo encabezado"
           </p>
 
-          <p class="mt-5">
-            <b><u>Métodos de búsqueda:</u></b> <br><br>
-            <b> getElementById: </b> Busca por id <br>
-            <b>getElementsByName:</b> Busca por el name value <br>
-            <b>getElementsByTagName:</b> Busca por el nombre del tag <br>
-            <b>getElementsByClassName:</b> Busca por clase <br>
-            <b>querySelector:</b> Busca por selector CSS <br>
-            <b>querySelectorAll:</b> Busca todos los selectores CSS.
+          <hr>
+
+          <h4>Cambiar el valor de un atributo</h4>
+
+          <p>
+            Para cambiar el valor de un atributo HTML, utilice esta sintaxis: <br><br>
+
+            <b>document.getElementById(id).attribute = new value</b>
+
+            Este ejemplo cambia el valor del atributo src de una imagen elemento:
           </p>
 
-          <p class="mt-5">
-            <b><u>Properties: </u></b> <br><br>
-            <b>attributes:</b> Nos devuelve todos los atributos que un elemento tenga, pudiendo cambiar cada uno de
-            ellos. <br>
-            <b>className:</b> Devuelve el nombre de la clase del elemento seleccionado.<br>
-            <b>innerHTML:</b> Con innerHTML podemos ver y cambiar el contenido del texto del elemento.<br>
-            <b>outerHTML:</b> Nos devuelve no solo el texto si no los tags que lo envuelvan.<br>
-            <b>textContent:</b> Similar a innerHTML pero devuelve el contenido de texto del elemento seleccionado y sus
-            descendientes.<br>
-            <b>style:</b> Nos devuelve el estilo del elemento y nos permite modificar el estilado del mismo.
+          <img src="../img/ejmImagen.png" class="img-fluid" alt="">
+
+          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
+
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image" target="_blank"
+            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
+
+          <p>
+            <b> Ejemplo explicado: </b> <br><br>
+
+            - El documento HTML anterior contiene un img elemento conid="myImage" <br>
+            - Usamos el HTML DOM para obtener el elemento conid="myImage" <br>
+            - Un JavaScript cambia el srcatributo de ese elemento de "smiley.gif" a "landscape.jpg"
           </p>
 
-          <p class="mt-5">
+          <hr>
 
-            <b><u>Eventos: </u></b> <br><br>
-            <b>onClick: </b>Cuando clickeamos el elemento. <br>
-            <b>resize: </b>Cuando resizeamos la página <br>
-            <b>onmouseover: </b>Cuando pasamos el puntero por encima del elemento. <br>
-            <b>onmouseout: </b>Cuando sacamos el puntero de encima.
+          <h4>Contenido HTML dinámico</h4>
+
+          <p>
+            JavaScript puede crear contenido HTML dinámico:
           </p>
 
-          <p class="mt-5">
-            En otras palabras: <b> el HTML DOM es un estándar sobre cómo obtener, cambiar, agregar o eliminar elementos
-              HTML.</b>
+          <img src="../img/ejmHtmlDinamico.png" class="img-fluid" alt="">
+
+          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
+
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_date" target="_blank"
+            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
+
+          <hr>
+
+          <h4>documento.escribir()</h4>
+
+          <p>
+            En JavaScript, document.write()se puede usar para escribir directamente en el flujo de salida HTML:
           </p>
+
+          <img src="../img/ejmDocEscribir.png" class="img-fluid" alt="">
+
+          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
+
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_write" target="_blank"
+            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
 
         </div>
       </center>
-      
+
     </div>
   </main>
 
